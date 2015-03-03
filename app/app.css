@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  border-bottom: 3px solid #02d6d8;
+}
+header h1 {
+  text-align: center;
+}
+body > div {
+  margin-top: 35px;
+}
+.green {
+  color: forestgreen;
+}
+.red {
+  color: orangered;
+}
+.plName {
+  font-style: italic;
+  font-size: 1.2em;
+}
+#desk {
+  margin: 0 auto;
+}
+#desk tr td {
+  width: 70px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 5px;
+  background: #02d6d8;
+  border: 2px solid white;
+  color: white;
+}
+#backBtn {
+  display: block;
+  text-align: center;
+}
