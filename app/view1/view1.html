@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="pl1">Enter First Name</label><br/>
+            <input type="text" name="pl1" ng-model="data.pl1"/>
+        </div>
+        <div class="form-group">
+            <label for="pl2">Enter Second Name </label><br/>
+            <input type="text" name="pl2" ng-model="data.pl2"/>
+        </div>
+        <a href="#/game"><button type="button" class="btn btn-primary btn-lg">Start Game</button></a>
+    </div>
+    <div class="col-md-6">
+        <h1> Player <span class="green">X</span> <span class="plName">{{data.pl1}}</span></h1>
+        <h1>Player <span class="red">O</span> <span class="plName">{{data.pl2}}</span></h1>
+
+    </div>
+</div>
+</div>

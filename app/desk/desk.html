@@ -1,0 +1,31 @@
+<a href="#/view1" id="backBtn">
+    <button class="btn btn-info">Change players</button>
+</a>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <h1><span class="green">X</span> - {{data.pl1}}</h1>
+            <h4>Total wins <span class="label label-success">{{pl1.wins}}</span></h4>
+
+        </div>
+        <div class="col-md-6 center-block">
+            <div class="gameDesk">
+                <h1 class="text-center"> Player <span class="green">{{currentPlayer | checkplayer}}</span> move!</h1>
+                <table cellspacing="23" id="desk" ng-click="currentMove($event)">
+                    <tr ng-repeat="rows in desk track by $index" data-id="{{$index}}">
+                        <td data-id="{{$index}}" ng-repeat="cells in rows track by $index"></td>
+                    </tr>
+                </table>
+            <button class="btn btn-danger btn-xs" ng-click="reset();">Reset desk</button>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h1><span class="red">O</span> - {{data.pl2}}</h1>
+            <h4>Total wins <span class="label label-success">{{pl2.wins}}</span></h4>
+
+        </div>
+    </div>
+</div>
+
